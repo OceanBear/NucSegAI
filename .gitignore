@@ -1,0 +1,4 @@
+output/
+pred/
+model_bin/*
+*.log
