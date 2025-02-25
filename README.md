@@ -13,11 +13,11 @@ NucSegAI is a deep learning model for automated nuclear segmentation and classif
 
 ## Image preparation
 
-1. Images can be patches/tiles of the `.tiff` format, or whole-slide images (WSI) of the `.svs` format. 
+1. Images can be either patches/tiles in `.tiff` or whole-slide images (WSI) in `.svs`. 
 
-2. Images are assumed to be captured at 40X magnification, with a resolution of 0.25 um/pixel. Improper magnification will generate suboptimal results. 
+2. Images are assumed to be captured at 40X magnification, with a resolution of 0.25 um/pixel. Improper resolution will generate suboptimal results. 
 
-2. During model development, we found staining normalization is critical step for generating accurate and consistent results. It is highly recommended to normalize the H&E staining before applying the model:
+2. During model development, we found staining normalization is critical for generating accurate and consistent results. It is highly recommended to normalize the H&E staining before applying the model:
 
 - `python3 stain_norm.py`
 
