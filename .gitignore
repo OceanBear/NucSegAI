@@ -2,3 +2,15 @@ output/
 pred/
 model_bin/*
 *.log
+.vscode
+*__pycache__
+
+# directories
+cache/
+dataset/
+exp_output/
+
+# checkpoint paths
+*.npz
+*.png
+*.log
