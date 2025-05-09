@@ -1,9 +1,10 @@
 {
     "0" : ["Undefined", [0,   0,   0]], 
-    "1" : ["Benign", [56, 127, 57]],
-    "2" : ["Tumor", [0,   255,   0]], 
+    "1" : ["Epithelium (PD-L1lo/ki67lo)", [56, 127, 57]],
+    "2" : ["Epithelium (PD-L1hi/ki67hi)", [0,   255,   0]], 
     "3" : ["Macrophage", [252, 141, 98]], 
     "4" : ["Lymphocyte", [255, 217,  47]], 
     "5" : ["Vascular", [69, 53, 193]],
-    "6" : ["Fibroblast", [23, 190, 207]]
+    "6" : ["Fibroblast/Stroma", [23, 190, 207]]
 }
+

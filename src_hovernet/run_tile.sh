@@ -2,7 +2,7 @@ python src_hovernet/run_infer.py \
 --gpu='0' \
 --nr_types=7 \
 --type_info_path=src_hovernet/type_info.json \
---batch_size=64 \
+--batch_size=1 \
 --model_mode=fast \
 --model_path=model_bin/NucSegAI_torch.tar \
 --nr_inference_workers=0 \

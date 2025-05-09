@@ -17,7 +17,7 @@ NucSegAI is a deep learning model for automated nuclear segmentation and classif
 
 2. Images are assumed to be captured at 40X magnification, with a resolution of 0.25 um/pixel. Improper resolution will generate suboptimal results. 
 
-2. During model development, we found staining normalization is critical for generating accurate and consistent results. It is highly recommended to normalize the H&E staining before applying the model:
+2. During model development, we found staining normalization is critical for generating accurate and consistent results. We need to normalize the H&E staining before applying the model:
 
 - `python3 stain_norm.py`
 
@@ -28,6 +28,8 @@ NucSegAI is a deep learning model for automated nuclear segmentation and classif
 2. Place it into a `model_bin/` folder under the same directory with this repo. 
 
 3. Run `src_hovernet/run_tile.sh` for tile inference or `src_hovernet/run_wsi.sh` for WSI inference. 
+
+![Example output](sample_images/nsclc_demo.png)
 
 ## Relevant repositories: 
 

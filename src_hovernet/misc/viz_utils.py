@@ -40,7 +40,7 @@ def random_colors(N, bright=True):
 
 ####
 def visualize_instances_map(
-    input_image, inst_map, type_map=None, type_colour=None, line_thickness=2
+    input_image, inst_map, type_map=None, type_colour=None, line_thickness=6
 ):
     """Overlays segmentation results on image as contours.
 
@@ -95,7 +95,7 @@ def visualize_instances_map(
 
 ####
 def visualize_instances_dict(
-    input_image, inst_dict, draw_dot=False, type_colour=None, line_thickness=2
+    input_image, inst_dict, draw_dot=False, type_colour=None, line_thickness=6
 ):
     """Overlays segmentation results (dictionary) on image as contours.
 

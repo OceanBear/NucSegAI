@@ -348,7 +348,7 @@ class InferManager(base.InferManager):
                 overlay_kwargs = {
                     "draw_dot": self.draw_dot,
                     "type_colour": self.type_info_dict,
-                    "line_thickness": 2,
+                    "line_thickness": 6,
                 }
                 func_args = (
                     self.post_proc_func,
