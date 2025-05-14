@@ -12,5 +12,5 @@ exp_output/
 
 # checkpoint paths
 *.npz
-*.png
+#*.png
 *.log

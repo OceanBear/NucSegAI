@@ -2,7 +2,11 @@
 
 ## Introduction
 
-NucSegAI is a deep learning model for automated nuclear segmentation and classification in H&E-stained histology images. NucSegAI is based on the HoverNet backbone, and is trained on H&E-stained images with paired multiplex immunofluorescence imaging data. The current model is optimized for non-small-cell lung cancer images. 
+NucSegAI is a deep learning model for automated nuclear segmentation and classification in H&E-stained histology images. NucSegAI is based on the HoverNet backbone, and is trained on H&E-stained images with paired multiplex immunofluorescence imaging data. 
+
+![Demo](git_images/model_demo.png)
+
+Instruction for use: https://github.com/gevaertlab/NucSegAI
 
 ## Environment setup
 
@@ -17,24 +21,34 @@ NucSegAI is a deep learning model for automated nuclear segmentation and classif
 
 2. Images are assumed to be captured at 40X magnification, with a resolution of 0.25 um/pixel. Improper resolution will generate suboptimal results. 
 
-2. During model development, we found staining normalization is critical for generating accurate and consistent results. We need to normalize the H&E staining before applying the model:
+2. During model development, we found staining normalization is critical for generating accurate results. Images must be stain normalized before applying the model:
 
 - `python3 stain_norm.py`
 
 ## Inference
 
-1. Download the model weights ("NucSegAI_torch.tar") from the [HuggingFace](https://huggingface.co/OGevaertLab/NucSegAI/). 
+1. Download the model weights from the [HuggingFace](https://huggingface.co/OGevaertLab/NucSegAI/).
 
-2. Place it into a `model_bin/` folder under the same directory with this repo. 
+- Colorectal cancer: NucSegAI_CRC.tar
+- Non-small-cell lung cancer: NucSegAI_NSCLC.tar 
+
+2. Place the tar file(s) into a `model_bin/` folder under the same directory with this repo. 
 
 3. Run `src_hovernet/run_tile.sh` for tile inference or `src_hovernet/run_wsi.sh` for WSI inference. 
 
-![Example output](sample_images/nsclc_demo.png)
+![Example output](git_images/nsclc_demo.png)
 
 ## Relevant repositories: 
 
 - StainTools: https://github.com/Peter554/StainTools 
 - HoverNet: https://github.com/vqdang/hover_net
+
+## Citation
+
+## License
+
+These models are released under the **CC-BY-NC-ND 4.0** license and may only be used for non-commercial, academic research purposes with proper attribution. Any commercial use, sale, or other monetization of the models and their derivatives, which include models trained on outputs from the model is prohibited and requires prior approval. Downloading the model requires prior registration on Hugging Face and agreeing to the terms of use. By downloading this model, you agree not to distribute, publish or reproduce a copy of the model. If another user within your organization wishes to use the model, they must register as an individual user and agree to comply with the terms of use. If you are a commercial entity, please contact the corresponding author.
+
 
 
 
