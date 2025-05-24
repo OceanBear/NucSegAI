@@ -59,7 +59,7 @@ Existing deep-learning models for nuclear segmentation and cell-type classificat
 
 ## Citation
 
-Zheng Y et al. ,Single-cell multimodal analysis reveals tumor microenvironment predictive of treatment response in non–small cell lung cancer.Sci. Adv.11,eadu2151(2025).DOI:10.1126/sciadv.adu2151
+Zheng Y et al., Single-cell multimodal analysis reveals tumor microenvironment predictive of treatment response in non–small cell lung cancer.Sci. Adv.11,eadu2151(2025).DOI:10.1126/sciadv.adu2151
 
 ## License
 
