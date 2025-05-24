@@ -2,11 +2,25 @@
 
 ## Introduction
 
-NucSegAI is a deep learning model for automated nuclear segmentation and classification in H&E-stained histology images. NucSegAI is based on the HoverNet backbone, and is trained on H&E-stained images with paired multiplex immunofluorescence imaging data. 
+NucSegAI is a deep learning model for automated nuclear segmentation and cell-type classification in H&E-stained histology images. NucSegAI is based on the HoverNet backbone, and is trained on H&E-stained images with paired multiplex immunofluorescence imaging data. 
 
 ![Demo](git_images/model_demo.png)
 
 Instruction for use: https://github.com/gevaertlab/NucSegAI
+
+## Why NucSegAI
+
+Existing deep-learning models for nuclear segmentation and cell-type classification are mostly trained on human-annotated H&E images, with performance often constrained by the limited number of labeled instances. Moreover, intra- and inter-observer variability in manual annotations can further hinder model accuracy. In contrast, **NucSegAI** is trained on large-scale H&E-stained images paired with multiplex immunofluorescence (mIF) data, where cell types are objectively defined based on the expression of lineage-specific markers, providing more reliable supervision.
+
+## Class labels
+
+0: Undefined
+1: Epithelium (PD-L1 low and Ki67 low)
+2: Epithelium (PD-L1 hi or Ki67 hi)
+3: Macrophage
+4: Lymphocyte
+5: Vascular
+6: Fibroblast/Stroma
 
 ## Environment setup
 
@@ -45,11 +59,11 @@ Instruction for use: https://github.com/gevaertlab/NucSegAI
 
 ## Citation
 
+Zheng Y et al. ,Single-cell multimodal analysis reveals tumor microenvironment predictive of treatment response in non–small cell lung cancer.Sci. Adv.11,eadu2151(2025).DOI:10.1126/sciadv.adu2151
+
 ## License
 
 These models are released under the **CC-BY-NC-ND 4.0** license and may only be used for non-commercial, academic research purposes with proper attribution. Any commercial use, sale, or other monetization of the models and their derivatives, which include models trained on outputs from the model is prohibited and requires prior approval. Downloading the model requires prior registration on Hugging Face and agreeing to the terms of use. By downloading this model, you agree not to distribute, publish or reproduce a copy of the model. If another user within your organization wishes to use the model, they must register as an individual user and agree to comply with the terms of use. If you are a commercial entity, please contact the corresponding author.
-
-
 
 
 
