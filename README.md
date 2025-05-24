@@ -14,12 +14,12 @@ Existing deep-learning models for nuclear segmentation and cell-type classificat
 
 ## Class labels
 
-0: Undefined
-1: Epithelium (PD-L1 low and Ki67 low)
-2: Epithelium (PD-L1 hi or Ki67 hi)
-3: Macrophage
-4: Lymphocyte
-5: Vascular
+0: Undefined \
+1: Epithelium (PD-L1 low and Ki67 low) \
+2: Epithelium (PD-L1 hi or Ki67 hi) \
+3: Macrophage \
+4: Lymphocyte \
+5: Vascular \
 6: Fibroblast/Stroma
 
 ## Environment setup
