@@ -1,0 +1,16 @@
+for installing the requirements.txt:
+
+
+# in your existing py3.9 env
+pip install -U pip wheel setuptools
+
+# preinstall binary-friendly versions
+pip install --only-binary=:all: \
+  "numpy==1.22.*" "matplotlib==3.5.3" "scipy==1.9.*" "scikit-image==0.19.*" \
+  "scikit-learn==1.1.*" "pandas==1.4.*" "pillow==9.*" "opencv-python==4.6.*" \
+  "psutil>=5.7.3" "tqdm>=4.48.0" "tensorboard>=2.3.0" "termcolor>=1.1.0"
+
+# now install the rest from your requirements without downgrading the above
+pip install --no-deps docopt==0.6.2 future==0.18.2 imgaug==0.4.0 tensorboardx==2.1 staintools
+
+

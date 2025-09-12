@@ -24,7 +24,7 @@ target = staintools.LuminosityStandardizer.standardize(target) # Standardize bri
 normalizer = staintools.StainNormalizer(method='vahadane')
 normalizer.fit(target)
 
-save_path = "./output"
+save_path = "./std_output"
 os.makedirs(save_path, exist_ok = True)
 if plot_thumnail:
     thumb_path = os.path.join(save_path, "thumbnails")

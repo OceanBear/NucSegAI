@@ -14,3 +14,6 @@ exp_output/
 *.npz
 #*.png
 *.log
+*.tiff
+git_images/nsclc_demo1.png
+*.svs
