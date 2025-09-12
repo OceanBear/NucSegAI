@@ -14,7 +14,7 @@ np.random.seed(0)
 plot_thumnail = True # whether to plot a thumbnail for the original and normalized images
 
 # Path to original images need to be normalized
-patch_path ="./sample_images"
+patch_path ="/scratch/st-kenfield-1/repo_data/NucSegAI/sample_images"
 original_images = os.listdir(patch_path)
 
 # Target image for normalization
@@ -24,7 +24,7 @@ target = staintools.LuminosityStandardizer.standardize(target) # Standardize bri
 normalizer = staintools.StainNormalizer(method='vahadane')
 normalizer.fit(target)
 
-save_path = "./std_output"
+save_path = "/scratch/st-kenfield-1/repo_data/NucSegAI/std_output"
 os.makedirs(save_path, exist_ok = True)
 if plot_thumnail:
     thumb_path = os.path.join(save_path, "thumbnails")
