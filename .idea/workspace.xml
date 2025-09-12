@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7390ab40-495d-484b-b47c-9828ab5d6b62" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src_hovernet/run_tile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src_hovernet/run_tile.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src_hovernet/run_wsi.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src_hovernet/run_wsi.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stain_norm.py" beforeDir="false" afterPath="$PROJECT_DIR$/stain_norm.py" afterDir="false" />
-    </list>
+    <list default="true" id="7390ab40-495d-484b-b47c-9828ab5d6b62" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +64,7 @@
       <workItem from="1757522705968" duration="35239000" />
       <workItem from="1757705854741" duration="1657000" />
       <workItem from="1757713543601" duration="1649000" />
-      <workItem from="1757715388536" duration="2452000" />
+      <workItem from="1757715388536" duration="3092000" />
     </task>
     <servers />
   </component>
