@@ -8,8 +8,8 @@ python src_hovernet/run_infer.py \
 --nr_inference_workers=0 \
 --nr_post_proc_workers=0 \
 wsi \
---input_dir=/scratch/st-kenfield-1/repo_data/NucSegAI/std_output \
---output_dir=/scratch/st-kenfield-1/repo_data/NucSegAI/pred \
+--input_dir=sample_wsi \
+--output_dir=pred \
 --input_mask_dir=mask \
 --save_thumb \
 --save_mask

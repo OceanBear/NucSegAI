@@ -8,6 +8,6 @@ python src_hovernet/run_infer.py \
 --nr_inference_workers=0 \
 --nr_post_proc_workers=0 \
 tile \
---input_dir=/scratch/st-kenfield-1/repo_data/NucSegAI/std_output \
---output_dir=/scratch/st-kenfield-1/repo_data/NucSegAI/pred \
---mem_usage=0.2
+--input_dir=std_output \
+--output_dir=pred \
+--mem_usage=0.2 \
