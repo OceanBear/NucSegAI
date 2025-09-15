@@ -27,7 +27,7 @@ normalizer.fit(target)
 save_path = "./std_output"
 os.makedirs(save_path, exist_ok = True)
 if plot_thumnail:
-    thumb_path = os.path.join(save_path, "thumbnails")
+    thumb_path = os.path.join(save_path, "./norm_thumbnails")
     os.makedirs(thumb_path, exist_ok = True)
    
 for image in original_images:
